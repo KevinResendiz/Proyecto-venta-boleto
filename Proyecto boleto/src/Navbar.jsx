@@ -9,11 +9,9 @@ import {
 export const Navbar = () => {
 	const { state } = useLocation();
 	const navigate = useNavigate();
-
 	console.log(state);
-
 	const onLogout = () => {
-		navigate('/Login', {
+		navigate('/login', {
 			replace: true,
 		});
 	};
@@ -27,18 +25,20 @@ export const Navbar = () => {
 
 				{state?.logged ? (
 					<div className='user'>
+						<Link to='/catalogo2'>Catalogo</Link>
 						<span className='username'>{state?.name}</span>
 						<button className='btn-logout' onClick={onLogout}>
 							Cerrar sesión
 						</button>
+						
 					</div>
 				) : (
+
 					<nav>
-						<Link to='/Login'>Iniciar sesión</Link>
-						<Link to='/Register'>Registrarse</Link>
-						
-
-
+						<Link to='/'>Inicio</Link>
+						<Link to='/login'>Iniciar sesión</Link>
+						<Link to='/register'>Registrar</Link>
+						<Link to='/catalogo'>Catalogo</Link>
 					</nav>
 				)}
 			</header>

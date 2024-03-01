@@ -4,7 +4,6 @@ import { useForm } from '../hook/useForm';
 
 export const LoginPage = () => {
 	const navigate = useNavigate();
-
 	const { name, email, password, onInputChange, onResetForm } =
 		useForm({
 			name: '',
@@ -16,14 +15,6 @@ export const LoginPage = () => {
 		e.preventDefault();
 
 		navigate('/dashboard', {
-			replace: true,
-			state: {
-				logged: true,
-				name,
-			},
-		});
-
-		navigate('/Home', {
 			replace: true,
 			state: {
 				logged: true,
@@ -77,7 +68,7 @@ export const LoginPage = () => {
 					<label htmlFor='password'>Contraseña:</label>
 				</div>
 
-				<button>Entrar</button>
+				<button>Iniciar</button>
 			</form>
 		</div>
 	);

@@ -69,7 +69,7 @@ export const RegisterPage = () => {
 					<label htmlFor='password'>Contraseña:</label>
 				</div>
 
-				<button>Registrarse</button>
+				<button>Registrar</button>
 			</form>
 		</div>
 	);
