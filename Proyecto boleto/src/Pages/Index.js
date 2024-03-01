@@ -2,5 +2,6 @@ export * from './DashboardPage';
 export * from './HomePage';
 export * from './RegisterPage';
 export * from './LoginPage';
-export * from './CatalogoPage'
-export * from './CatalogoPage2'
+export * from './CatalogoPage';
+export * from './CatalogoPage2';
+export * from './CompraPage';

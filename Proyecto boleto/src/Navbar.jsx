@@ -39,6 +39,7 @@ export const Navbar = () => {
 						<Link to='/login'>Iniciar sesión</Link>
 						<Link to='/register'>Registrar</Link>
 						<Link to='/catalogo'>Catalogo</Link>
+						<Link to='/compra'>Compra</Link>
 					</nav>
 				)}
 			</header>
